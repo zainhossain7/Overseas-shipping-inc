@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shipment - Overseas Shipping Inc</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Company Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Book Your Shipment</h1>
+        </section>
+
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-form">
+                    <h2>Shipment Details</h2>
+                    <form id="bookingForm" action="https://formspree.io/f/xldgqvak" method="POST">
+                        <div class="form-group">
+                            <label for="service-type">Service Type</label>
+                            <select id="service-type" name="service-type" required>
+                                <option value="">Select a Service</option>
+                                <option value="auto">Auto Shipping</option>
+                                <option value="international">International Shipping</option>
+                                <option value="household">Household Shipping</option>
+                                <option value="warehouse">Warehousing and Crossdocking</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup">Pickup Location</label>
+                            <input type="text" id="pickup" name="pickup" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="delivery">Delivery Location</label>
+                            <input type="text" id="delivery" name="delivery" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Pickup Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="details">Additional Details</label>
+                            <textarea id="details" name="details" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Booking</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Phone: 703-348-9916</p>
+                <p>7020 Quad Ave.</p>
+                <p>Rosedale, MD 21237</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Check for success parameter in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('status') === 'success') {
+            alert('Booking submitted successfully! We will contact you shortly.');
+        }
+    });
+    </script>
+</body>
+</html> 

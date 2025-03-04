@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overseas Shipping Inc - Global Logistics Solutions</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Company Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Enhanced Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Your Gateway to Seamless Global Shipping</h1>
+                <p>From Auto Transport to Container Shipping, count on us for hassle-free, reliable, and competitive International Shipping Services.</p>
+                <div class="hero-buttons">
+                    <a href="services.html" class="cta-button">Our Services</a>
+                    <a href="booking.html" class="cta-button secondary">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="feature-item">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Reach</h3>
+                    <p>Worldwide shipping solutions with extensive network coverage</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Transport</h3>
+                    <p>Your cargo's safety is our top priority</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer service</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <div class="container">
+                <h2>Our Premium Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <img src="assets/images/auto1.png" alt="Auto Transport">
+                        <h3>Auto Transport</h3>
+                        <p>Safe and secure vehicle shipping worldwide</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="assets/images/container1.png" alt="Container Shipping">
+                        <h3>Container Shipping</h3>
+                        <p>Efficient container transport solutions</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="assets/images/warehouse1.png" alt="Warehousing">
+                        <h3>Warehousing</h3>
+                        <p>Modern storage and distribution facilities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <p>Countries Served</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10k+</span>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <p>Customer Support</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to Ship?</h2>
+                <p>Get your free quote today and experience hassle-free shipping</p>
+                <a href="contact.html" class="cta-button">Get a Quote</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i> 703-348-9916</p>
+                <p><i class="fas fa-map-marker-alt"></i> 7020 Quad Ave.</p>
+                <p>Rosedale, MD 21237</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Working Hours</h4>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM ET</p>
+                <p>Saturday - Sunday: Closed</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Check if images are loading
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                if (!img.complete || img.naturalHeight === 0) {
+                    console.error('Image failed to load:', img.src);
+                } else {
+                    console.log('Image loaded successfully:', img.src);
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

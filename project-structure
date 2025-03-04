@@ -1,0 +1,18 @@
+logistics-website/
+├── index.html
+├── about.html
+├── services.html
+├── tracking.html
+├── contact.html
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── responsive.css
+│   ├── js/
+│   │   ├── main.js
+│   │   └── tracking.js
+│   └── images/
+│       └── logo.png
+└── components/
+    ├── header.html
+    └── footer.html 
